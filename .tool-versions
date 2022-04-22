@@ -1,0 +1,10 @@
+# When you change the elixir or erlang versions, run this file:
+# `infrastructure/docker-images/ci-testing/update_testing_image -h`
+# which takes from command line arguments and will rebuild the docker image for CircleCI
+# Use this OS_VERSION for OTP 23.3+ and 24.0.X
+# This version will change over time as Debian buster is updated in the base image
+# SEE https://hub.docker.com/r/hexpm/erlang/tags for valid combinations of erlang/OTP and linux.
+# OS_VERSION=debian-buster-20210326
+erlang 24.0.5
+nodejs 16.13.2
+elixir 1.13.2-otp-24
