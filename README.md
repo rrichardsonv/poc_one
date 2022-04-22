@@ -1,19 +1,15 @@
 # PocOne
 
-To start your Phoenix server:
+Executes `word-count.js` using assigns from page view
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Outstanding Unknowns
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+- Preparing the render (the simple wrapper I have won't work for more complex frameworks/elements)
+- Haven't tested with typescript
+- Browser support for`<template shadowroot=open>`
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Outstanding knowns
 
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+- Building the engine to:
+  - get the file without IO
+  - inject the call for webcomponents in templates
